@@ -8,12 +8,9 @@
 
 <script>
 function funkcja() {
-  alert("Czy chcesz pobrać mix? Ma ok. 2 godziny! Jeśli tak kliknij ok jeśli nie - kliknij wstecz.");
-  redirect()
-}
-</script>
-<script>
-function redirect() {
-window.location.href = "https://srv3.onlymp3.to/download?file=fd2bf0c4735da6d95556838e143ef8e0140003";
+ if (confirm("Czy chcesz pobrać mix? Ma ok. 2 godziny.")) {
+   window.location.href = 'https://srv3.onlymp3.to/download?file=fd2bf0c4735da6d95556838e143ef8e0140003';
+   } else {
+   alert("Wybrano opcję: Anuluj");
 }
 </script>
